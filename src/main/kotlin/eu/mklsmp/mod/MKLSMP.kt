@@ -1,4 +1,4 @@
-package com.example.kickme
+package eu.mklsmp.mod
 
 import com.mojang.brigadier.CommandDispatcher
 import net.fabricmc.api.ModInitializer

@@ -1,15 +1,15 @@
 {
 	"schemaVersion": 1,
 	"id": "mkl-smp",
-	"version": "${version}",
+	"version": "0.1.0",
 	"name": "MKL-SMP",
-	"description": "This is an example description! Tell everyone what your mod is about!",
+	"description": "The official MKL-SMP mod",
 	"authors": [
-		"Me!"
+		"mkez"
 	],
 	"contact": {
-		"homepage": "https://fabricmc.net/",
-		"sources": "https://github.com/FabricMC/fabric-example-mod"
+		"homepage": "https://mkl-smp.eu",
+		"sources": "https://github.com/mk3z/mkl-smp"
 	},
 	"license": "CC0-1.0",
 	"icon": "assets/mkl-smp/icon.png",
