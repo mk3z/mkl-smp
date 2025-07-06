@@ -6,10 +6,16 @@ import net.fabricmc.fabric.api.command.v2.CommandRegistrationCallback
 import net.minecraft.server.command.CommandManager.literal
 import net.minecraft.server.command.ServerCommandSource
 import net.minecraft.text.Text
+import org.slf4j.LoggerFactory
 
-object KickMeMod : ModInitializer {
+object MKLSMP : ModInitializer {
+    private val logger = LoggerFactory.getLogger("mkl-smp")
     override fun onInitialize() {
-        CommandRegistrationCallback.EVENT.register( CommandRegistrationCallback { dispatcher: CommandDispatcher<ServerCommandSource>, _, _ ->
+        CommandRegistrationCallback.EVENT.register(
+                CommandRegistrationCallback {
+                        dispatcher: CommandDispatcher<ServerCommandSource>,
+                        _,
+                        _ ->
                     dispatcher.register(
                             literal("racist").executes { context ->
                                 val player = context.source.player
@@ -30,5 +36,6 @@ object KickMeMod : ModInitializer {
                     )
                 }
         )
+        logger.info("MKL-SMP mod loaded")
     }
 }
