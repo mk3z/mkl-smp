@@ -1,7 +1,7 @@
 {
 	"schemaVersion": 1,
 	"id": "mkl-smp",
-	"version": "0.1.1",
+	"version": "0.1.2",
 	"name": "MKL-SMP",
 	"description": "The official MKL-SMP mod",
 	"authors": [
