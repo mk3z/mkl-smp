@@ -7,5 +7,8 @@
 }: {
   languages.kotlin.enable = true;
 
-  packages = with pkgs; [kotlin-language-server];
+  packages = with pkgs; [
+    kotlin-language-server
+    jdt-language-server
+  ];
 }

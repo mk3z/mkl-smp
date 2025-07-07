@@ -3,7 +3,6 @@ package eu.mklsmp.mod
 import com.mojang.brigadier.CommandDispatcher
 import net.fabricmc.api.ModInitializer
 import net.fabricmc.fabric.api.command.v2.CommandRegistrationCallback
-import net.minecraft.server.MinecraftServer
 import net.minecraft.server.command.CommandManager.literal
 import net.minecraft.server.command.ServerCommandSource
 import net.minecraft.text.Text
@@ -39,10 +38,5 @@ object MKLSMP : ModInitializer {
         )
 
         logger.info("MKL-SMP mod loaded")
-    }
-
-    fun broadcastCustom(server: MinecraftServer, message: String) {
-        val customMessage: Text = Text.literal("[Allah] $message")
-        server.playerManager.broadcast(customMessage, false)
     }
 }
