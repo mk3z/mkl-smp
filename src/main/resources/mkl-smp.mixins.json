@@ -3,7 +3,7 @@
 	"package": "eu.mklsmp.mod.mixin",
 	"compatibilityLevel": "JAVA_21",
 	"mixins": [
-		"SayCommandMixin"
+		"ServerNameMixin"
 	],
 	"injectors": {
 		"defaultRequire": 1
